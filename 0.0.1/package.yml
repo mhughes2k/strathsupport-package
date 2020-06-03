@@ -1,8 +1,8 @@
 # Simple package
 
-name: simple-package 
+name: strathsupporte-package 
 parent: default
 
 matches:
-  - trigger: ":hw"
-    replace: "hello world"
+  - trigger: ":regards"
+    replace: "Regards\n\nMichael Hughes\nMyplace Support"
