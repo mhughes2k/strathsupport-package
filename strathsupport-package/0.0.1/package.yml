@@ -1,8 +1,14 @@
 # Simple package
 
-name: strathsupporte-package 
+name: strathsupport-package 
 parent: default
 
 matches:
   - trigger: ":regards"
     replace: "Regards\n\nMichael Hughes\nMyplace Support"
+  - trigger: ":close"
+    replace: "As we have no further response with regards to this query, we are going to close this call."
+  - trigger: ":reopen"
+    replace: "Should there be any further information please do get in contact again with the Helpdesk (help@strath.ac.uk) who can re-open it."
+  - trigger: ":helproles"
+    replace: "https://support.myplace.strath.ac.uk/display/MS/Roles"
