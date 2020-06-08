@@ -15,7 +15,7 @@ matches:
   - trigger: ":helproles"
     replace: "https://support.myplace.strath.ac.uk/display/MS/Roles"
   - trigger: ":email-close"
-    replace: "{{close}}\n\n{{reopen}}\n\n{{regards}}
+    replace: "{{close}}\n\n{{reopen}}\n\n{{regards}}"
     vars:
       - name: close
         type: match
