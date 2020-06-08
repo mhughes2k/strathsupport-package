@@ -5,7 +5,7 @@ parent: default
 
 matches:
   - trigger: ":reinstall"
-    replace: "espanso uninstall strathsupport-package\nespanso package install strathsupport-package https://github.com/mhughes2k/strathsupport-package --external"
+    replace: "espanso uninstall strathsupport-package\nespanso package install strathsupport-package https://github.com/mhughes2k/strathsupport-package --external\nespanso restart\n"
   - trigger: ":regards"
     replace: "Regards\n\nMichael Hughes\nMyplace Support"
   - trigger: ":close"
@@ -15,7 +15,7 @@ matches:
   - trigger: ":helproles"
     replace: "https://support.myplace.strath.ac.uk/display/MS/Roles"
   - trigger: ":email-close"
-    replace: "{{close}}\n\n{{reopen}}"
+    replace: "{{close}}\n\n{{reopen}}\n\n{{regards}}
     vars:
       - name: close
         type: match
@@ -25,3 +25,7 @@ matches:
         type: match
         params:
           trigger: ":reopen"
+      - name: regards
+        type: match
+        params:
+          trigger: ":regards"
