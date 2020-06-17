@@ -23,9 +23,14 @@ matches:
           trigger: ":close"
       - name: reopen
         type: match
+        type: match
         params:
           trigger: ":reopen"
       - name: regards
         type: match
         params:
           trigger: ":regards"
+  - trigger: ":noteams"
+    replace: "The University has not yet deployed MS teams, so it is not possible to generally join.\nHowever, if the West Partnership were to add this email address as a “guest user”, it should be possible to log in and access these resources." 
+  - trigger: ":rollovermove"
+    replace: "This site is marked with a rollover action of "move", meaning that it always will live on the latest academic year instance of Myplace (https://support.myplace.strath.ac.uk/display/MS/Rollover+Explained).\n\nThis means that the site wouldn't be available until the end of 19th June."
